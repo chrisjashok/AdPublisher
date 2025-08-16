@@ -1,0 +1,24 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Start from the top */
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh; /* Fill the viewport height */
+    box-sizing: border-box;
+}
+
+.slider-window-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 0 0 !important;
+}
+
+.cardlist-container {
+    margin-top: 2rem; /* Adjust as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
