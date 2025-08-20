@@ -1,13 +1,15 @@
 import { Grid, IconButton, Drawer, Box } from '@mui/material';
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import { logo } from '../assets';
 import '../components/index.css';
 import CoustomTab from './coustomTab';
 import CoustomSearchBar from './coustomSearchBar';
+import { useNavigate } from 'react-router-dom';
 
 function WebtopBar() {
     const [drawerOpen, setDrawerOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <Grid className="webTopbar_root">
@@ -18,7 +20,7 @@ function WebtopBar() {
 
             {/* Desktop/Tablet Tabs */}
             <Grid item className="tabView desktopTab">
-                <CoustomTab />
+                <CoustomTab onSelectTab={(val)=> navigate(val) } />
             </Grid>
 
             {/* Search (desktop/tablet only) */}

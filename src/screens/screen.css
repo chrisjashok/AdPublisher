@@ -6,6 +6,16 @@
     width: 100%;
     min-height: 100vh; /* Fill the viewport height */
     box-sizing: border-box;
+    /* background-color: #212121; */
+    background: linear-gradient(180deg, #fdd835 15%, #212121 70%);
+}
+
+.component-container {
+    margin: 1.5rem 0 1.5rem 0; /* Adjust as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider-window-container {
@@ -13,12 +23,4 @@
     align-items: center;
     justify-content: center;
     margin: 1.5rem 0 0 0 !important;
-}
-
-.cardlist-container {
-    margin-top: 2rem; /* Adjust as needed */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

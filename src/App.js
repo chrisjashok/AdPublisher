@@ -1,4 +1,4 @@
-import './App.css';
+import { WebtopBar } from './components';
 import Routers from './routers';
 
 function App() {

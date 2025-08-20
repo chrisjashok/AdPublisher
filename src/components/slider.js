@@ -11,10 +11,11 @@ const videos = [
     'https://www.w3schools.com/html/mov_bbb.mp4',
 ];
 
-const CENTER_WIDTH = '690dvw';
-const CENTER_HEIGHT = '245dvh';
-const SIDE_WIDTH = '400dvw';
-const SIDE_HEIGHT = '225dvh';
+const CENTER_WIDTH = '90vw';
+const CENTER_HEIGHT = '40vw';
+const SIDE_WIDTH = '40vw';
+const SIDE_HEIGHT = '30vh';
+
 // const OVERLAP = SIDE_WIDTH / 3; // One third overlap
 
 function Slider() {
