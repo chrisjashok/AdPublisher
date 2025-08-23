@@ -6,12 +6,12 @@ import StarIcon from '@mui/icons-material/Star';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import '../components/index.css';
 const cards = [
-    { icon: <HomeIcon fontSize="large" />, label: 'Home' },
-    { icon: <StarIcon fontSize="large" />, label: 'Star' },
-    { icon: <FavoriteIcon fontSize="large" />, label: 'Favorite' },
-    { icon: <HomeIcon fontSize="large" />, label: 'Home 2' },
-    { icon: <StarIcon fontSize="large" />, label: 'Star 2' },
-    { icon: <FavoriteIcon fontSize="large" />, label: 'Favorite 2' },
+    { icon: <HomeIcon fontSize="large" />, label: 'Entertainment' },
+    { icon: <StarIcon fontSize="large" />, label: 'Sports' },
+    { icon: <FavoriteIcon fontSize="large" />, label: 'Festival' },
+    { icon: <HomeIcon fontSize="large" />, label: 'Professonal' },
+    { icon: <StarIcon fontSize="large" />, label: 'Politics' },
+    { icon: <FavoriteIcon fontSize="large" />, label: 'Others' },
 ];
 
 export default function CardList() {
