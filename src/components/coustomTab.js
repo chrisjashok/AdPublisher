@@ -11,7 +11,6 @@ function CoustomTab({ vertical = false, onSelectTab }) {
     ];
 
     const handleTab = (label) => {
-        console.log('Selected Tab:', label);
         onSelectTab(label);
     }
 

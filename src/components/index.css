@@ -303,18 +303,18 @@
 }
 
 @media (min-width: 900px) {
-.custom-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 150px;
-  width: 28dvw;
-  padding: 3rem;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  cursor: pointer;
-  box-sizing: border-box;
-}
+  .custom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    width: 28dvw;
+    padding: 3rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
 }
 
 /* contentCard */
@@ -371,7 +371,6 @@
 .content_text_container {
   width: 100%;
   padding: 1rem;
-  
 }
 
 .content_text {
@@ -466,35 +465,29 @@
   }
 }
 
-
-.event_list{
+.event_list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
   margin: auto;
   padding: 1rem;
 }
 
 .event-card {
-  display: flex;
+  flex-direction: row;
   align-items: center;
+  width: 90%;
   padding: 16px;
-  max-width: 700px;
-  margin: 12px auto;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  margin: 0.7rem 0.6rem 0.7rem 0.6rem;
 }
 
 .event-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 16px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 180px;
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 .event-details {
@@ -506,45 +499,59 @@
 .event-title {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .event-description {
-  font-size: 14px;
-  color: #555;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .explore-button {
-  height: fit-content;
-  margin-left: 16px;
-  white-space: nowrap;
+  margin-left: 0;
+  margin-top: 12px;
+  align-self: flex-start;
 }
 
-/* 🌐 Responsive for mobile */
-@media screen and (max-width: 600px) {
-  .event-card.mobile {
-    flex-direction: column;
-    align-items: flex-start;
-    
+.explore-button:hover {
+  margin-top: 0.2rem;
+  height: 2.1rem;
+  width: 7rem;
+  transform: translateY(5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* 🌐 Responsive for Desktop */
+@media screen and (min-width: 900px) {
+  .event-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
   }
 
   .event-image {
-    width: 100%;
-    height: 180px;
-    margin-right: 0;
-    margin-bottom: 12px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+    flex-shrink: 0;
   }
 
   .explore-button {
-    margin-left: 0;
-    margin-top: 12px;
-    align-self: flex-start;
+    height: fit-content;
+    margin-left: 16px;
+    white-space: nowrap;
   }
 
   .event-description {
-    white-space: normal;
+    font-size: 14px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
